@@ -1,0 +1,60 @@
+p{
+    color:greenyellow;
+    text-indent: 50px;
+}
+
+/*span et a et h3 souligné d'en haut
+pour faire le et (,)
+
+*/
+a, span, h3{
+    text-decoration: overline;
+    color:red;
+}
+/*les déscendants : fils et petit fils ... on le fait avec espace
+
+ul  li{
+    list-style: none;
+}
+*/
+/*les fils directe :sans  petit fils  on le fait avec >*/
+ul > li{
+    list-style: none;
+}
+
+/*Le successeur directe : l'element suivant on le fait avec +*/
+li + li {/*c a d les li qui vient directement apré un li*/
+    font-size: 30px;
+}
+
+p + * {
+    /* * veut dire n'importe quel balise qui vien apré p*/
+    background-color: rgba(21, 50, 22,0.5);
+    color:yellowgreen;
+}
+
+/*le successeur meme s'il n'est pas directe
+p ~ *{
+    background-color: rgba(21, 50, 22,0.5);
+    color:orangered;
+}*/
+
+div{
+    width: 400px;
+    height: 400px;
+}
+
+.A{
+    width: 800px;
+    height: 600px;
+    background-image: url("../Ressources/acad.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    border: 2px solid orangered;
+}
+
+
+ol{
+    list-style-position: inside;
+}
