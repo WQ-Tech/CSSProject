@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            margin: 0 10px 0 0 ;
+            color:yellow;
+            font-size: 20px;
+        }
+        .A{
+            background-color: blue;
+        }
+        .B{
+            background-color: red;
+        }
+        .C{
+            background-color: green;
+            width: 33vw;
+            height: 100vh;
+        }
+        .D{
+            background-color: orangered;
+        }
+        #p1{
+            color:blue;
+            font-size: 30px;
+        }
+        div:hover{
+            border:3px solid yellow;
+            font-size: 40px;
+            width: 300px;
+            height: 300px;
+            cursor: Progress;
+              }
+        div::first-letter{
+            color:black;
+        }
+
+        input[value=""] + span::after{
+            /*input[value] + span
+            jib lina span qui vient 
+            apres un input qui possede value comme attribut*/
+            color:red;
+            content: "(*)";
+        }
+        li:nth-child(2){
+            color: orangered;
+        }
+        li:nth-last-child(2){
+            color: rgb(18, 160, 89);
+        }
+        li:nth-of-type(3n)
+        {
+            background-color: rgb(18, 160, 89);
+
+        }
+
+        .X{
+            background: linear-gradient(70deg, red, pink);;
+     
+        }
+
+        h1{
+            font-family: 'Indie Flower', cursive;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Suite du cours CSS</h1>
+    <div class="A">DIv A</div>
+    <div class="A">DIv B</div>
+    <div class="A">DIv C</div>
+    <div class="B">DIv D</div>
+    <div class="C">DIv E</div>
+    <div class="D">DIv F</div>
+    <div class="D" id='p1'>DIv P1</div>
+    <input type="text" value=""><span></span><br>
+    <input type="text" value="ok"><span></span><br>
+    <input type="text"><span></span><br>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>*3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>1</li>
+        <li>2</li>
+        <li>*3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+    <div class="X"></div>
+</body>
+</html>
