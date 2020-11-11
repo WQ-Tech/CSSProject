@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 150px;
+            height: 150px;
+            margin: 20px;
+            transition: background-color 2s, width 8s ease-in 2s;
+            transition-timing-function: ease-out;
+        }
+
+        .A{
+            background-color: orangered;
+        }
+        .B{
+            background-color: blueviolet;
+        }
+        div:hover{
+          /*  transform: rotate(30deg); selon l'axe de vue
+          transform: rotateY(60deg); selon l'axe du heigth
+          transform: rotateX(60deg); selon l'axe du width 
+          change la taille du width et heigth
+          transform: scale(0.5,2);
+          il y a aussi scaleX(2) ou scaleY(2)
+          translate pour se déplacer selion x et y
+          transform: translate(50px,100px); 
+          
+          transform: translateX(100px); 
+          transform: translateY(100px); 
+          transform: matrix(1, -0.3, 0, 1, 0, 0);
+transform: rotate(20deg) translate(20px,50px)  ;
+     
+          */
+          background-color:blue;
+          width: 250px;
+               }
+    </style>
+</head>
+<body>
+    <div class="A">DevWeb&Mob-301</div>
+    <div class="B"></div>
+</body>
+</html>

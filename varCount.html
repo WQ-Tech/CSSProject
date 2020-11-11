@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            /*pour tous les élément les variables*/
+            /*afin de déclaré ou changer la valeur
+            d'une variable je la nome puis je luis affecte avec
+            : sa valeur
+            pour nomé une variable le développeur
+            doit commencé par --puis le nom
+            --bg-color*/
+           --c:yellow; 
+            --dim:200px;
+        }
+        div{
+            /*afin de lire la valeur d'une variable
+            var(nomVariable)
+            
+            un element lit la valeur de la variable
+            qui lui est affecté dans un selecteur css
+            ou bien celle du parent s'il ne trouve
+
+            ou bien la valeur par défaut s'il ne trouve
+
+            pas chez les parents
+           
+            aussi si la valeur de la variable n'est
+            pas conforme alors on cherche prend la valeur 
+            par défaut
+           
+            */
+            width:var(--dim);
+            height: var(--dim);
+            --c : blueviolet;
+        }
+        .A{
+            width:var(--dim);
+            background-color: var(--c);
+        }
+        .B{
+            --c:orangered;
+            background-color: var(--c);
+        }
+        .C{
+            background-color: var(--c);
+        }
+        h5{
+            color:var(--c);
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="A" style="text-decoration: none; ">Hi i am Div A ;)</div>
+    <div class="B"><h5>Cool my name is DiV B :D</h5>
+        <div class="C">Hi iam c</div>
+    </div>
+    <h5> Hi i am a title level 5</h5>
+    <script>
+        var div = document.getElementsByTagName("div");
+        for(i=0; i<div.length; i++)
+        {
+            var x = getComputedStyle(div[i]).getPropertyValue("--dim");
+            alert(x);
+            if(div[i].classList.contains("A"))
+            {
+                x=parseInt( x.substring(0,3)) + 100;
+                x=x+"px";
+                div[i].style.setProperty("--dim",x);
+            }
+        }
+    </script>
+</body>
+</html>
