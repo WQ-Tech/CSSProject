@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Container{
+            display: flex;
+            flex-direction:  row;
+           
+            justify-content: space-between;/*dans le sens de flex-direction*/
+            border:2px solid blue;
+            flex-wrap: wrap;
+            align-content: flex-end;
+        }      
+        .Container div{
+            border:2px solid yellow;
+            flex-basis: 40%;
+        }  
+        .A{
+            order:5;
+        }
+        .B{
+            order:6;
+        }
+        .C{
+            order:2;
+        }
+    </style>
+</head>
+<body>
+    <div class="Container">
+        <div class="A">
+        <h3>Div 1</h3>
+        Lorem ipsum dolor sit amet consectetur, 
+        adipisicing elit. Ab nihil necessitatibus,
+         quis minima quibusdam, aut ex, vitae 
+         similique tempore eos eum. Ex nobis 
+         suscipit, quaerat alias sed in nam quam?
+        </div>
+        <div class="B">
+            <h3>Div 2</h3>
+        Lorem ipsum dolor sit amet consectetur, 
+        adipisicing elit. Ab nihil necessitatibus,
+         quis minima quibusdam, aut ex, vitae 
+         similique tempore eos eum. Ex nobis 
+         suscipit, quaerat alias sed in nam quam?  
+        </div>
+        <div class="C">
+            <h3>Div 3</h3>
+        Lorem ipsum dolor sit amet consectetur, 
+        adipisicing elit. Ab nihil necessitatibus,
+         quis minima quibusdam, aut ex, vitae 
+         similique tempore eos eum. Ex nobis 
+         suscipit, quaerat alias sed in nam quam?  
+        </div>
+        <div class="D">
+            <h3>Div 4</h3>
+        Lorem ipsum dolor sit amet consectetur, 
+        adipisicing elit. Ab nihil necessitatibus,
+         quis minima quibusdam, aut ex, vitae 
+         similique tempore eos eum. Ex nobis 
+         suscipit, quaerat alias sed in nam quam?  
+        </div>
+        <div class="E">
+            <h3>Div 5</h3>
+        Lorem ipsum dolor sit amet consectetur, 
+        adipisicing elit. Ab nihil necessitatibus,
+         quis minima quibusdam, aut ex, vitae 
+         similique tempore eos eum. Ex nobis 
+         suscipit, quaerat alias sed in nam quam?  
+        </div>
+    </div>
+</body>
+</html>

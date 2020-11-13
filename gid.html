@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .Grid{
+            display: grid;
+            border:2px solid rgb(110, 107, 104);
+            grid-template-columns: 20fr 15fr 40fr 10fr 15fr;
+            grid-template-rows: 2fr 1fr ;
+            column-gap: 10px;
+            row-gap: 20px;
+            grid-auto-flow: row;
+            grid-auto-columns: 300px;
+            
+        }
+        .Grid > div{
+            background-color: gray;
+            border :1px solid blue;
+        }
+        
+        .B{
+
+            grid-column: 3 / span 2;
+        }
+        .site{
+            display: grid;
+            grid-template-columns: 2fr 8fr;
+            grid-template-rows: 2fr 7fr 1fr;
+            gap:10px;
+            grid-template-areas: 
+            'header header' 
+            'nav c' 
+            'foot foot';
+
+        }
+
+        .header{
+            grid-area: header;
+            background-color: rgb(74, 235, 74);
+            border:2px solid green;
+        }
+        .footer{
+            grid-area: foot;
+            background-color: rgba(128, 128, 128, 0.733);
+            border:2px solid #272727;
+        }
+        .nav{
+            grid-area: nav;
+            background-color: rgb(89, 135, 204);
+            border: 2px solid blue;
+        }       
+         .content{
+             grid-area: c;
+            background-color: rgb(214, 146, 20);
+            border:2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="Grid">
+        <div class="A"> 
+            <h5>Div 1</h5>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore a dolorem amet, laudantium,
+            hic tempore consequatur aperiam possimus delectus beatae, magni voluptatum labor sint 
+            molestiae nemo architecto natus laborum deserunt.
+        </div>
+        <div class="B"> 
+            <h5>Div 2</h5>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore a dolorem amet, laudantium,
+            hic tempore consequatur aperiam possimus delectus beatae, magni voluptatum laboriosam sint 
+            molestiae nemo architecto natus laborum deserunt.</div>
+        <div class="C"> 
+            <h5>Div 3</h5>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore a dolorem amet, laudantium,
+            hic tempore consequatur aperiam possimus delectus beatae, magni voluptatum laboriosam sint 
+            molestiae nemo architecto natus laborum deserunt.</div>
+        <div class="D"> 
+            <h5>Div 4</h5>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore a dolorem amet, laudantium,
+            hic tempore consequatur aperiam possimus delectus beatae, magni voluptatum laboriosam sint 
+            molestiae nemo architecto natus laborum deserunt.</div>
+        <div class="E"> 
+            <h5>Div 5</h5>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore a dolorem amet, laudantium,
+            hic tempore consequatur aperiam possimus delectus beatae, magni voluptatum laboriosam sint 
+            molestiae nemo architecto natus laborum deserunt.</div>
+        <div class="F"> 
+            <h5>Div 6</h5>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore a dolorem amet, laudantium,
+            hic tempore consequatur aperiam possimus delectus beatae, magni voluptatum laboriosam sint 
+            molestiae nemo architecto natus laborum deserunt.</div>
+        <div class="G"> 
+            <h5>Div 7</h5>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore a dolorem amet, laudantium,
+            hic tempore consequatur aperiam possimus delectus beatae, magni voluptatum laboriosam sint 
+            molestiae nemo architecto natus laborum deserunt.</div>
+        <div class="H"> 
+            <h5>Div 8</h5>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore a dolorem amet, laudantium,
+            hic tempore consequatur aperiam possimus delectus beatae, magni voluptatum laboriosam sint 
+            molestiae nemo architecto natus laborum deserunt.</div>     
+    </div>
+    <div class="site">
+        <div class="header">Header</div>
+        <div class="nav">Nav</div>
+        <div class="content">Contenent</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
