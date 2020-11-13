@@ -7,25 +7,40 @@
     <style>
         .Container{
             display: flex;
-            flex-direction:  row;
-           
-            justify-content: space-between;/*dans le sens de flex-direction*/
-            border:2px solid blue;
+            flex-direction: row;
+            height: 500px;
+            border:3px solid red;
+            align-items: stretch;
+            justify-content: space-between;
             flex-wrap: wrap;
-            align-content: flex-end;
-        }      
-        .Container div{
-            border:2px solid yellow;
-            flex-basis: 40%;
-        }  
+            
+        }
+
+        .Container > div{
+            background-color: gray;
+            border: 2px solid #272727;
+            flex-basis: 18%;
+        }
         .A{
-            order:5;
+            align-self: center;
+            order:10;
+            
         }
         .B{
-            order:6;
+            
+            order:12;
         }
         .C{
-            order:2;
+            
+            flex-shrink: 3;
+            order:1;
+        }
+        .D{
+            order: 2;
+        }
+        .E{
+            
+            order: 3;
         }
     </style>
 </head>
@@ -39,6 +54,22 @@
          similique tempore eos eum. Ex nobis 
          suscipit, quaerat alias sed in nam quam?
         </div>
+        <div class="A">
+            <h3>Div 1</h3>
+            Lorem ipsum dolor sit amet consectetur, 
+            adipisicing elit. Ab nihil necessitatibus,
+             quis minima quibusdam, aut ex, vitae 
+             similique tempore eos eum. Ex nobis 
+             suscipit, quaerat alias sed in nam quam?
+            </div>
+            <div class="A">
+                <h3>Div 1</h3>
+                Lorem ipsum dolor sit amet consectetur, 
+                adipisicing elit. Ab nihil necessitatibus,
+                 quis minima quibusdam, aut ex, vitae 
+                 similique tempore eos eum. Ex nobis 
+                 suscipit, quaerat alias sed in nam quam?
+                </div>
         <div class="B">
             <h3>Div 2</h3>
         Lorem ipsum dolor sit amet consectetur, 
@@ -71,6 +102,7 @@
          similique tempore eos eum. Ex nobis 
          suscipit, quaerat alias sed in nam quam?  
         </div>
+
     </div>
 </body>
 </html>
